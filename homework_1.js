@@ -33,7 +33,7 @@ let price = Math.trunc((product-(product*discount)));
 let missed_cash = Math.abs(Math.floor((product/2) - price));
 
 console.log
-	(`
+(`
 	Максимальная цена: ${max}
 	Минимальная цена: ${min}
 	Сумма цен: ${sum}
@@ -45,4 +45,4 @@ console.log
 	Скидка: ${discount*100+"%"}
 	Цена со скидкой: ${price}
 	Упущенная выгода: ${Math.trunc(product/2)}-${price}->${missed_cash}
-	`)
+`)
