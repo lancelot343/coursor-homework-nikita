@@ -12,13 +12,7 @@ let smaller_prices = Math.floor(balls) + Math.floor(oranges) + Math.floor(pineap
 
 let smaller_sum = Math.ceil(sum/100)*100;
 
-let res;
-if (smaller_sum % 2 == 0) {
-	res = true;
-}
-else {
-	res = false;
-}
+const res = smaller_sum % 2 == 0;
 
 let change = 500.0 - sum;
 
