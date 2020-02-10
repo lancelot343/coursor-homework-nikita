@@ -31,5 +31,12 @@ for (let i=n;i<=m;i++)
 		result += i;
 	}
 }
-console.log(skip)
-console.log(result);
+
+document.writeln(`N: ${n}, M: ${m}, Skipping? ${skip}, result: ${result}`);
+
+console.log
+(`N; ${n} 
+M: ${m}
+skipping: ${skip} 
+result: ${result}`
+);
