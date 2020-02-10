@@ -1,30 +1,30 @@
-let balls = 15.678;
-let oranges = 123.965;
-let pineapples = 90.2345;
+const let balls = 15.678;
+const let oranges = 123.965;
+const let pineapples = 90.2345;
 
-let max = Math.max(balls, oranges, pineapples);
+const let max = Math.max(balls, oranges, pineapples);
 
-let min = Math.min(balls, oranges, pineapples)
+const let min = Math.min(balls, oranges, pineapples)
 
-let sum = balls + oranges + pineapples;
+const let sum = balls + oranges + pineapples;
 
-let smaller_prices = Math.floor(balls) + Math.floor(oranges) + Math.floor(pineapples);
+const let smaller_prices = Math.floor(balls) + Math.floor(oranges) + Math.floor(pineapples);
 
-let smaller_sum = Math.ceil(sum/100)*100;
+const let smaller_sum = Math.ceil(sum/100)*100;
 
 const res = smaller_sum % 2 == 0;
 
-let change = 500.0 - sum;
+const let change = 500.0 - sum;
 
-let average = (sum/3).toFixed(2)
+const let average = (sum/3).toFixed(2)
 
-let discount = Math.random().toFixed(2);
+const let discount = Math.random().toFixed(2);
 
-let product = oranges + pineapples;
+const let product = oranges + pineapples;
 
-let price = Math.trunc((product-(product*discount)));
+const let price = Math.trunc((product-(product*discount)));
 
-let missed_cash = Math.abs(Math.floor((product/2) - price));
+const let missed_cash = Math.abs(Math.floor((product/2) - price));
 
 console.log
 (`
