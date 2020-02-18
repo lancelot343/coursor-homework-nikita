@@ -14,9 +14,17 @@ function getMaxDigit(number) {
 const num = 4;
 const exp = 6;
 function pow(num, exp) {
-	let res = 1;
-	for (let i=0;i<exp;i++) {
-		res *= num;
+	let res;
+	if (num===0)
+	{
+		res = 1;
+	}
+	else 
+	{
+		for (let i=0;i<exp;i++) 
+		{
+			res *= num;
+		}
 	}
 	return res;
 }
