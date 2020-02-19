@@ -38,7 +38,7 @@ function random_mark(couple, theme)
 	let random_marks = [];
 	for (let i=0;i<pair_project.length;i++)
 	{
-		random_marks.push([couple[i], theme[i], [Math.floor(Math.random()*5)]]);
+		random_marks.push([couple[i], theme[i], Math.floor(Math.random()*5)]);
 	}
 	return random_marks;
 }
