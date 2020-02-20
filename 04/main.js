@@ -33,7 +33,7 @@ function mark(students, marks)
 const student_marks = mark(students, marks);
 console.log(student_marks);
 
-function random_mark(couple, theme)
+function random_mark(pairProjects)
 {
 	let random_marks = [];
 	for (let i=0;i<pair_project.length;i++)
@@ -42,5 +42,5 @@ function random_mark(couple, theme)
 	}
 	return random_marks;
 }
-const random_marks = random_mark(couples, themes);
+const random_marks = random_mark(pair_project);
 console.log(random_marks);
