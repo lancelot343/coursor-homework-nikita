@@ -36,9 +36,9 @@ console.log(student_marks);
 function random_mark(pairProjects)
 {
 	let random_marks = [];
-	for (let i=0;i<pair_project.length;i++)
+	for (let i=0;i<pairProjects.length;i++)
 	{
-		random_marks[i] = (pair_project[i], Math.round(Math.random()*5));
+		random_marks[i] = ([pair_project[i], Math.round(Math.random()*5)]);
 	}
 	return random_marks;
 }
