@@ -2,7 +2,7 @@ const students = ["Саша", "Игорь", "Лена", "Ира", "Алексе�
 const themes = ["Дифференциальные уравнения", "Теория автоматов", "Алгоритмы и структуры данных"];
 const marks = [4, 5, 5, 3, 4, 5];
 
-function couple(students) 
+function couple(students)
 {
 	return [[students[0],students[2]],[students[1],students[3]],[students[4],students[5]]];
 }
@@ -24,7 +24,7 @@ console.log(pair_project);
 function mark(students, marks)
 {
 	let mark_student = [];
-	for (let i=0;i<students.length;i++) 
+	for (let i=0;i<students.length;i++)
 	{
 		mark_student.push([students[i], marks[i]]);
 	}
@@ -38,7 +38,7 @@ function random_mark(couple, theme)
 	let random_marks = [];
 	for (let i=0;i<pair_project.length;i++)
 	{
-		random_marks.push(pair_project[i], Math.floor(Math.random()*5));
+		random_marks[i] = (pair_project[i], Math.round(Math.random()*5));
 	}
 	return random_marks;
 }
