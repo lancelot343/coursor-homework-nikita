@@ -38,7 +38,8 @@ function random_mark(pairProjects)
 	let random_marks = [];
 	for (let i=0;i<pairProjects.length;i++)
 	{
-		random_marks[i].push([pairProjects[i], Math.round(Math.random()*5)]);
+		let randomMark = Math.round(Math.random()*5);
+		random_marks[i] = ([...pairProjects[i], randomMark]);
 	}
 	return random_marks;
 }
