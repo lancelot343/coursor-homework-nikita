@@ -14,7 +14,7 @@ function getMaxDigit(number) {
 const num = 4;
 const exp = 6;
 function pow(num, exp) {
-	let res;
+	let res = 1;
 	if (num===0)
 	{
 		res = 1;
@@ -33,14 +33,14 @@ const Name = 'вЛАД';
 function formatString(string) {
 	let letter = "";
 	let res = "";
-	for (let i=0;i<Name.length;i++)
+	for (let i=0;i<string.length;i++)
 	{
 		if (i === 0) {
-			letter = Name[0].toUpperCase();
+			letter = string[0].toUpperCase();
 		}
 		else
 		{
-			letter = Name[i].toLowerCase();
+			letter = string[i].toLowerCase();
 		}
 		res += letter;
 	}
@@ -53,7 +53,7 @@ function countSalary(salary, taxes) {
 	let res;
 	while (taxes > 100 || taxes < 0)
 	{
-		console.log("Taxes should be between 0 and 100 %!");
+		throw new Error('Taxes should be between 0 and 100 %!')
 	}
 	res = salary - (salary * taxes/100);
 	return res;
